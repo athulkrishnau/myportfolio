@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Default font */
+            background-image: url('newback.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire body */
+            background-color:'87CEBB';
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* No repeating */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('background2.webp');
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            font-size: 2em;
+            animation: fadeIn 2s ease-out; /* Fade in animation */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: adds a vertical slide effect */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Optional: ends at the original position */
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd; 
+        }
+
+        main {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px; /* Added for better separation */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 2s ease-out forwards; /* Apply fade-in animation */
+        }
+
+        section p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 15px; /* Space between paragraphs */
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 2s ease-out forwards; /* Apply fade-in animation */
+        }
+
+        section#about h2 {
+            animation-delay: 0.5s; /* Delayed appearance */
+        }
+
+        section#about p {
+            animation-delay: 0.7s; /* Delayed appearance */
+        }
+
+        section#skills h2 {
+            animation-delay: 1s; /* Delayed appearance */
+        }
+
+        section#skills ul {
+            animation-delay: 1.2s; /* Delayed appearance */
+        }
+
+        section#resume h2 {
+            animation-delay: 1.5s; /* Delayed appearance */
+        }
+
+        section#resume p {
+            animation-delay: 1.7s; /* Delayed appearance */
+        }
+
+        section#skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section#skills ul li {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-bottom: 10px; /* Space between skills */
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 2s ease-out forwards; /* Apply fade-in animation */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px; /* Adjust spacing from footer text */
+            position: absolute;
+            bottom: 10px; /* Distance from bottom */
+            right: 10px; /* Distance from right */
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-left: 10px; /* Adjust spacing between icons */
+        }
+
+        .social-icons img {
+            width: 20px; /* Adjust size of social icons */
+            height: auto;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2); /* Zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to my portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Myportfolio.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate Electronics and Communication Engineering student currently pursuing my degree at Sri Krishna College of Technology. With a strong foundation in both hardware and software, I have developed a deep interest in the intersection of technology and innovation.</p>
+            <p>Throughout my academic journey, I have gained proficiency in programming languages such as C++ and Java, as well as expertise in frontend web development. My experience includes building dynamic web applications, creating user-friendly interfaces, and implementing responsive designs using HTML, CSS, and JavaScript.</p>
+            <p>I am an enthusiastic learner who constantly seeks out new challenges and opportunities to expand my skill set. My projects have ranged from developing a Netflix clone to designing custom 404 error pages and building full-stack web applications using the MERN stack. These experiences have honed my problem-solving abilities and strengthened my understanding of both client-side and server-side technologies.</p>
+            <p>Beyond my technical skills, I am an effective communicator and a collaborative team player. I enjoy working on group projects and believe that diverse perspectives contribute to innovative solutions. My goal is to leverage my technical expertise and passion for technology to secure exciting core job opportunities in the electronics and communication field.</p>
+            <p>If you are looking for a dedicated and skilled individual who is eager to contribute to cutting-edge projects and make a meaningful impact, please feel free to connect with me.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>React JS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>MERN Stack</li>
+                <li>AWS Cloud Essentials</li>
+                <li>Frontend Web Development</li>
+            </ul>
+        </section>
+
+        <section id="resume">
+            <h2>View My Resume</h2>
+            <p>You can view my resume by clicking the link below:</p>
+            <p><a href="file:///C:/Users/athul/OneDrive/Documents/AthulKrishnaUResume.pdf">View Resume</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Athul Krishna U</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank"><img src="instagramlogo.jpg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/athul-krishna-139915258/" target="_blank"><img src="LinkedIn_logo_initials.png.webp" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
